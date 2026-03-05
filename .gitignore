@@ -1,0 +1,40 @@
+# === Виртуальное окружение ===
+.venv/
+venv/
+env/
+ENV/
+
+# === Настройки PyCharm ===
+.idea/
+
+# === Кэш Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# === Логи и временные файлы ===
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+
+# === Файлы окружения и секреты ===
+.env
+.env.local
+*.env
+secrets.json
+config.local.py
+
+# === ОС ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === Сборка и дистрибуция ===
+build/
+dist/
+*.egg-info/
+.eggs/
