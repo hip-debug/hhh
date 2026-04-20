@@ -1,0 +1,14 @@
+*   0a4e987 Разрешён конфликт: объединены методы calculate_shipping и get_category
+|\  
+| * 5215192 added product.py
+* | 4e2fbe9 Добавлен метод calculate_shipping в Product
+|/  
+* 942ac0b master
+| * c738b62 Добавлены методы управления складом: check_stock и update_stock
+|/  
+* 7e01c21 v1
+* a05cda2 svaga
+* 43392b1 data added
+* 06518c5 requirment added
+* e2dcc4f added utils
+* ae1f029 beta 1.0

@@ -1,0 +1,5 @@
+  feature/add-shipping
+  feature/inventory-managment
+* master
+  remotes/origin/feature/inventory-managment
+  remotes/origin/master
