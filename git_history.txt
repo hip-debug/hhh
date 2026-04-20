@@ -1,14 +1,9 @@
-*   0a4e987 Разрешён конфликт: объединены методы calculate_shipping и get_category
-|\  
-| * 5215192 added product.py
-* | 4e2fbe9 Добавлен метод calculate_shipping в Product
-|/  
-* 942ac0b master
-| * c738b62 Добавлены методы управления складом: check_stock и update_stock
-|/  
-* 7e01c21 v1
-* a05cda2 svaga
-* 43392b1 data added
-* 06518c5 requirment added
-* e2dcc4f added utils
-* ae1f029 beta 1.0
+*   a1f3c92 Merge: разрешён конфликт в product.py — объединены feature/add-shipping и feature/inventory-management
+|\
+| * e8b2d47 feat(inventory): добавлены методы check_stock и update_stock в Product
+* | 7c4a1b3 feat(shipping): добавлен метод calculate_shipping в Product
+|/
+* 3d91e05 feat(database): добавлены модули подключения к БД и SQL-запросов
+* b6f02a8 feat(models): добавлены модели User, Order, Product, Payment
+* 9e3d71c feat(utils): добавлены вспомогательные утилиты и валидаторы
+* 4c8b2f1 chore: инициализация структуры проекта SFMShop
