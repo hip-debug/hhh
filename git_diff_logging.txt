@@ -1,0 +1,75 @@
+diff --git a/src/database/__init__.py b/src/database/__init__.py
+new file mode 100644
+index 0000000..a53c62e
+--- /dev/null
++++ b/src/database/__init__.py
+@@ -0,0 +1,6 @@
++def main():
++    pass
++
++
++if __name__ == '__main__':
++    main()
+diff --git a/src/database/connection.py b/src/database/connection.py
+new file mode 100644
+index 0000000..a53c62e
+--- /dev/null
++++ b/src/database/connection.py
+@@ -0,0 +1,6 @@
++def main():
++    pass
++
++
++if __name__ == '__main__':
++    main()
+diff --git a/src/database/create_sfmshop_db.sql b/src/database/create_sfmshop_db.sql
+new file mode 100644
+index 0000000..e69de29
+diff --git a/src/database/queries.py b/src/database/queries.py
+new file mode 100644
+index 0000000..5cf9114
+--- /dev/null
++++ b/src/database/queries.py
+@@ -0,0 +1,6 @@
++def main():
++    pass
++
++
++if __name__ == '__main__':
++    main()
+\ No newline at end of file
+diff --git a/src/utils/logger.py b/src/utils/logger.py
+new file mode 100644
+index 0000000..3ac300b
+--- /dev/null
++++ b/src/utils/logger.py
+@@ -0,0 +1,29 @@
++import logging
++import os
++from datetime import datetime
++
++
++def setup_logger(name: str, log_level=logging.INFO) -> logging.Logger:
++    logger = logging.getLogger(name)
++    logger.setLevel(log_level)
++
++    if not logger.handlers:
++        os.makedirs("logs", exist_ok=True)
++        log_filename = f"logs/{name}_{datetime.now().strftime('%Y%m%d')}.log"
++
++        file_handler = logging.FileHandler(log_filename, encoding="utf-8")
++        console_handler = logging.StreamHandler()
++
++        formatter = logging.Formatter(
++            "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
++        )
++        file_handler.setFormatter(formatter)
++        console_handler.setFormatter(formatter)
++
++        logger.addHandler(file_handler)
++        logger.addHandler(console_handler)
++
++    return logger
++
++
++app_logger = setup_logger("sfmshop")

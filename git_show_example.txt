@@ -1,0 +1,59 @@
+commit ae1f029dcf8388f142d42cc1a5cd4125fa5d8fdf
+Author: hip <gameexrppro@gmail.com>
+Date:   Fri Mar 6 00:02:16 2026 +0300
+
+    beta 1.0
+
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+index 0000000..0ccf35f
+--- /dev/null
++++ b/.gitignore
+@@ -0,0 +1,40 @@
++# === Виртуальное окружение ===
++.venv/
++venv/
++env/
++ENV/
++
++# === Настройки PyCharm ===
++.idea/
++
++# === Кэш Python ===
++__pycache__/
++*.py[cod]
++*$py.class
++*.pyo
++*.pyd
++
++# === Логи и временные файлы ===
++*.log
++*.tmp
++*.swp
++*.swo
++*~
++
++# === Файлы окружения и секреты ===
++.env
++.env.local
++*.env
++secrets.json
++config.local.py
++
++# === ОС ===
++.DS_Store
++Thumbs.db
++desktop.ini
++
++# === Сборка и дистрибуция ===
++build/
++dist/
++*.egg-info/
++.eggs/
+\ No newline at end of file
+diff --git a/README.md b/README.md
+new file mode 100644
+index 0000000..e69de29
+diff --git a/src/main.py b/src/main.py
+new file mode 100644
+index 0000000..e69de29
